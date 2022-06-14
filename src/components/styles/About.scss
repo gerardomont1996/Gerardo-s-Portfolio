@@ -1,0 +1,141 @@
+.about {
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(rgb(129, 173, 240),black);
+    overflow: hidden;
+
+}
+
+
+.about__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem;
+}
+
+.about__img img{
+    margin-top: 1rem;
+    width: 520px;
+    height: 600px;
+    padding: 10px;
+    object-fit: cover;
+    clip-path: circle(50% at 50% 50%);
+    cursor: pointer;
+    
+    }
+
+.about__content {
+    margin:auto;
+    line-height: 30px;
+    text-align: center;
+    width: 50%;
+
+    h1 {
+        color:rgb(248, 246, 246);
+        text-transform: uppercase;
+        font-size: 55px;
+        margin-bottom: 2.125rem;
+    }
+
+    p {
+        font-weight: bolder;
+        color: #fff;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgb(0, 2, 122);
+        cursor: pointer;
+        box-shadow: 2px 2px 15px rgb(8, 130, 179);
+        padding: 6px;
+        margin-block: 7px
+        ;
+
+        &:hover {
+            transform: scale(110%);
+            transition: 250ms;
+            color: rgb(45, 177, 253);
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .about__container {
+        flex-direction: column;
+        margin: 2.5rem;
+
+
+    h1 {
+
+        font-size: 25px;
+        margin-bottom: 0rem;
+    }
+
+    p {
+        font-size: 26px;
+        margin-block: 25px;
+        padding: 25px;
+        font-weight: normal;
+    }
+
+    }
+
+    .about__img img{
+        clip-path: circle(40% at 50% 50%);
+        cursor: pointer;
+    }
+
+}
+
+
+
+@media (max-width:735px) {
+    .about__img img{
+        clip-path: circle(40% at 50% 50%);
+        cursor: pointer;
+    }
+
+
+    .about__container {
+        flex-direction: column;
+        margin: 1.0rem;
+
+
+    h1 {
+
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 10px;
+        margin-block:5px;
+        padding: 5px;
+
+    }
+
+    }
+}
+
+@media (max-width:335px) {
+    .about__container {
+        margin: 0;
+    h1 {
+
+        font-size: 20px;
+        margin-bottom: 0rem;
+    }
+
+    p {
+        font-size: 12px;
+        margin-block: 0px;
+        padding: 0px;
+        font-weight: normal;
+        box-shadow: 2px 2px 5px green;
+    }
+
+    }
+
+    .about__img img{
+        clip-path: circle(40% at 50% 50%);
+        cursor: pointer;
+    }
+
+}
